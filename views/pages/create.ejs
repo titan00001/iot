@@ -1,0 +1,24 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IOT Platform</title>
+</head>
+
+<body class="container">
+
+<header>
+    <%- include('../partials/header') %>
+</header>
+
+<main>
+    <%- include('partials/createData', {data : data}) %>
+</main>
+
+<footer>
+    <%- include('../partials/footer') %>
+</footer>
+
+</body>
+</html>

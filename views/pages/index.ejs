@@ -1,0 +1,32 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IOT Platform</title>
+</head>
+
+<body class="container">
+
+<header>
+    <%- include('../partials/header') %>
+</header>
+
+<main>
+    <%- include('../partials/showData', {data : data}) %>
+
+    <form action="/" method="POST">
+        <label for="id">Id:</label><br>
+        <input type="text" id="id" name="id"><br>
+        <label for="reason">Reason:</label><br>
+        <input type="text" id="reason" name="reason"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+</main>
+
+<footer>
+    <%- include('../partials/footer') %>
+</footer>
+
+</body>
+</html>
